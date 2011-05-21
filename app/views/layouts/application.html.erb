@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ShallIWork</title>
+	<meta name="author" content="@mval">
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag "colors.js" %>
+  <%= csrf_meta_tag %>
+	<script>
+		var currentTime = new Date();
+		var hour = currentTime.getHours()
+		if(hour < 7){
+			var message = "No"
+			var subtitle = "Why don't you sleeping?"
+		} else if( hour >= 7 && hour < 13 ) {
+			var message = "Yes"
+			var subtitle = "May be coffee?"
+		} else if( hour >- 13 && hour < 15) {
+			var message = "No"
+			var subtitle = "Dinner?"
+		} else if( hour >- 15 && hour < 19) {
+			var message = "Yes"
+			var subtitle = "Do your job"
+		} else if( hour >= 19){
+			var message = "No"
+			var subtitle = "Relax."
+		} else {
+			var message = "No"
+			var subtitle = "What's happening?"
+		}
+		
+		if(message == "No") {
+			InitColoredLogotype();
+		}
+	</script>
+</head>
+	<body>
+
+		<%= yield %>
+
+	</body>
+</html>
