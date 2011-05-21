@@ -59,9 +59,9 @@ function SetLogoColor (h, s, v)
 
 function AlterColor()
 {	
-	CurrentColor.h = 330 + Math.floor (30 * Math.random());
-	CurrentColor.s = 60 + Math.floor (40 * Math.random());
-	CurrentColor.v = 60 + Math.floor (40 * Math.random());
+	CurrentColor.h = Math.floor (360 * Math.random());
+	CurrentColor.s = 30 + Math.floor (70 * Math.random());
+	CurrentColor.v = 30 + Math.floor (50 * Math.random());
 
 	SetLogoColor (CurrentColor.h, CurrentColor.s, CurrentColor.v);
 }
@@ -85,7 +85,7 @@ function SlightlyAlterColor()
 	
 	SetLogoColor (CurrentColor.h, CurrentColor.s, CurrentColor.v);
 	clearInterval (ColorTimer);
-	ColorTimer = setInterval (SlightlyAlterColor, 5);	
+	ColorTimer = setInterval (SlightlyAlterColor, 30);	
 }
 
 function MakeAStep (value, min, max)
@@ -118,3 +118,5 @@ function ActivateCoolLogo()
 	var logodiv = document.getElementById ('ArtLebedevLogo');
 	if (logodiv) logodiv.style.display = 'block';
 }
+
+InitColoredLogotype();
