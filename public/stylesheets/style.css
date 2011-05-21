@@ -35,9 +35,11 @@ html,body{height:100%;text-align:center;}
 	height: 24px;
 	line-height: 24px;
 }
-.footer a{text-decoration: none; color: #666;}
+.footer a{text-decoration: none;}
 .footer a:hover{ text-decoration: underline;}
-.footer strong{
+
+.footer p.twitter a {color: #666;}
+.footer p.twitter strong{
 	color: #666;
 	display: inline;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -46,4 +48,12 @@ html,body{height:100%;text-align:center;}
 	font-variant: normal;
 	font-weight: bold;
 	text-align: left;
+}
+.footer p.fb a{
+	color: #3B5998;
+	cursor: pointer;
+	direction: ltr;
+	display: inline;
+	font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+	font-size: 16px;
 }
