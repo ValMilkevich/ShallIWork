@@ -10,9 +10,10 @@
 	<script>
 		var currentTime = new Date();
 		var hour = currentTime.getHours()
-		if(currentTime.getDay() > 5){
+		alert(currentTime.getDay())
+		if(currentTime.getDay() == 6 || currentTime.getDay() == 0){
 			var message = "No"
-			var subtitle = "It's weekend."
+			var subtitle = "Relax. It's weekend."
 		} else if(hour < 3){
 			var message = "No"
 			var subtitle = "Relax."
