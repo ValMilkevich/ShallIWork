@@ -85,7 +85,7 @@ function SlightlyAlterColor()
 	
 	SetLogoColor (CurrentColor.h, CurrentColor.s, CurrentColor.v);
 	clearInterval (ColorTimer);
-	ColorTimer = setInterval (SlightlyAlterColor, 30);	
+	ColorTimer = setInterval (SlightlyAlterColor, 50);	
 }
 
 function MakeAStep (value, min, max)
@@ -118,5 +118,3 @@ function ActivateCoolLogo()
 	var logodiv = document.getElementById ('ArtLebedevLogo');
 	if (logodiv) logodiv.style.display = 'block';
 }
-
-InitColoredLogotype();

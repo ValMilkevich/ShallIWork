@@ -10,7 +10,10 @@
 	<script>
 		var currentTime = new Date();
 		var hour = currentTime.getHours()
-		if(hour < 3){
+		if(currentTime.getDay() > 5){
+			var message = "No"
+			var subtitle = "It's weekend."
+		} else if(hour < 3){
 			var message = "No"
 			var subtitle = "Relax."
 		} else if( hour < 7 ) {
@@ -24,7 +27,7 @@
 			var subtitle = "Dinner?"
 		} else if( hour >- 15 && hour < 19) {
 			var message = "Yes"
-			var subtitle = "Do your job"
+			var subtitle = "Do your job."
 		} else if( hour >= 19){
 			var message = "No"
 			var subtitle = "Relax."
