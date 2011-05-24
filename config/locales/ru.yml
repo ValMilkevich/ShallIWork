@@ -3,8 +3,7 @@
 
 ru:
   shall_i_work: "Поработать ли мне?"
-  # shall_i_work_now: "Поработать ли мне?"
-  shall_i_work_now: "Почему не на работе?"
+  shall_i_work_now: "Поработать ли мне?"
   no: "Нет"
   yes: "Да"
   relax_its_weekend: "Выходные же"
