@@ -1,0 +1,1 @@
+var __locale = {"shall_i_work":"Shall I work?","shall_i_work_now":"Shall I work now?","false":"No","true":"Yes","relax_its_weekend":"Relax. It's weekend.","relax":"Relax.","no_sleep":"No sleep?","may_be_coffee":"May be coffee?","dinner":"Dinner.","do_your_job":"Do your job.","whats_up":"What's happening?","twitter_homepage":"Twitter homepage","special_message":""}

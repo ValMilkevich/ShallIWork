@@ -1,31 +1,31 @@
 var currentTime = new Date();
 var hour = currentTime.getHours()
 if(currentTime.getDay() == 6 || currentTime.getDay() == 0){
-	var message = "No"
-	var subtitle = "Relax. It's weekend."
+	var message = translate("false")
+	var subtitle = translate("relax_its_weekend")
 } else if(hour < 3){
-	var message = "No"
-	var subtitle = "Relax."
+	var message = translate("false")
+	var subtitle = translate("relax")
 } else if( hour < 7 ) {
-	var message = "No"
-	var subtitle = "No sleep?"
+	var message = translate("false")
+	var subtitle = translate("no_sleep")
 } else if( hour >= 7 && hour < 13 ) {
-	var message = "Yes"
-	var subtitle = "May be coffee?"
+	var message = translate("true")
+	var subtitle = translate("may_be_coffee")
 } else if( hour >- 13 && hour < 15) {
-	var message = "No"
-	var subtitle = "Dinner?"
+	var message = translate("false")
+	var subtitle = translate("dinner")
 } else if( hour >- 15 && hour < 19) {
-	var message = "Yes"
-	var subtitle = "Do your job."
+	var message = translate("true")
+	var subtitle = translate("do_your_job")
 } else if( hour >= 19){
-	var message = "No"
-	var subtitle = "Relax."
+	var message = translate("false")
+	var subtitle = translate("relax")
 } else {
-	var message = "No"
-	var subtitle = "What's happening?"
+	var message = translate("false")
+	var subtitle = translate("whats_up")
 }
 
-if(message == "No") {
+if(message == translate("false")) {
 	InitColoredLogotype();
 }

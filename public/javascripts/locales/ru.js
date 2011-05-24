@@ -1,0 +1,1 @@
+var __locale = {"shall_i_work":"Поработать ли мне?","shall_i_work_now":"Поработать ли мне?","false":"Нет","true":"Да","relax_its_weekend":"Выходные же","relax":"Работы больше нет.","no_sleep":"Чего не спится?","may_be_coffee":"Кофе?","dinner":"Обед.","do_your_job":"Работа не ждет.","whats_up":"Что происходит?","twitter_homepage":"Твиттер","special_message":"Почему не на работе?"}
