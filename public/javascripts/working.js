@@ -3,6 +3,9 @@ var hour = currentTime.getHours()
 if(currentTime.getDay() == 6 || currentTime.getDay() == 0){
 	var message = translate("false")
 	var subtitle = translate("relax_its_weekend")
+} else if( currentTime.getDay() == 5 && hour >= 19 ) {
+	var message = translate("no_no")
+	var subtitle = translate("friday_relax")
 } else if(hour < 3){
 	var message = translate("false")
 	var subtitle = translate("relax")
@@ -28,4 +31,8 @@ if(currentTime.getDay() == 6 || currentTime.getDay() == 0){
 
 if(message == translate("false")) {
 	InitColoredLogotype();
+}
+
+if(message == translate("no_no")) {
+	InitColoredLogotype(15);
 }

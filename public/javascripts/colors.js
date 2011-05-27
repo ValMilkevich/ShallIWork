@@ -66,18 +66,25 @@ function AlterColor()
 	SetLogoColor (CurrentColor.h, CurrentColor.s, CurrentColor.v);
 }
 
-function InitColoredLogotype()
+function InitColoredLogotype(interval)
 {
+	if(!interval){
+		interval = 50
+	}
 	CurrentColor.h = 356;
 	CurrentColor.s = 100;
 	//CurrentColor.v = 74;
 	CurrentColor.v = 37;
 	
-	ColorTimer = setInterval (SlightlyAlterColor, 0);	
+	ColorTimer = setInterval (SlightlyAlterColor(interval), 0);	
 }
 
-function SlightlyAlterColor()
+function SlightlyAlterColor(interval)
 {
+	if(!interval){
+		interval = 50
+	}
+	
 	var x = Math.floor (10 * Math.random());
 	if (x == 1) CurrentColor.v = MakeAStep (CurrentColor.v, 30, 80);
 	else if (x == 2) CurrentColor.s = MakeAStep (CurrentColor.s, 50, 100);
@@ -85,7 +92,7 @@ function SlightlyAlterColor()
 	
 	SetLogoColor (CurrentColor.h, CurrentColor.s, CurrentColor.v);
 	clearInterval (ColorTimer);
-	ColorTimer = setInterval (SlightlyAlterColor, 50);	
+	ColorTimer = setInterval (SlightlyAlterColor, interval);	
 }
 
 function MakeAStep (value, min, max)
