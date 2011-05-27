@@ -68,3 +68,9 @@ html,body{height:100%;text-align:center;}
 	font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
 	font-size: 16px;
 }
+table.quote{ border: none; width: 100%; background: #F5F5EA; padding: 12px; margin-top: 24px;}
+table.quote td.content{ text-align: left;}
+table.quote td.pict{ padding: 0px 12px;}
+table.quote td.left{ text-align: right;}
+table.quote td.right{ text-align: left; vertical-align: bottom;}
+table.quote tr.author td{ padding: 12px;}
