@@ -3,6 +3,8 @@
 	<head>
 	  <title>Shall I Work?</title>
 		<meta name="author" content="@mval">
+		<meta name="description" content="Allows you to easily understand if you need to work hard now, or can relax for a while.">
+		<meta name="keywords" content="Shall I work?, work, I need to work?, should I work?">
 		<link rel="shortcut icon" href="http://shalliwork.com/favicon.png" />
 	  <%= stylesheet_link_tag :all %>
 		<%= javascript_include_tag "locale", "locales/#{I18n.locale}" %>
@@ -26,6 +28,7 @@
     <meta property="og:image" content="http://shalliwork.com/favicon.png"/>
     <meta property="og:site_name" content="Shall I work"/>
     <meta property="og:description" content="<%= t "og_description" %>"/>
+		
 	</head>
 	<body>
 		<%= yield %>
