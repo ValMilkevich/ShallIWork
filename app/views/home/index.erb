@@ -5,21 +5,21 @@
 	</p>
 	<h1 id="message-header"><script>document.write(message)</script></h1>
 
-	<p>
-		<script>document.write(subtitle)</script>
+	<div class="subtitle">
+			<script>document.write(subtitle)</script>
 		<iframe src="http://www.facebook.com/plugins/like.php?app_id=202018386508690&amp;href=shalliwork.com&amp;send=false&amp;layout=button_count&amp;width=50&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px; height:21px;" allowTransparency="true"></iframe>
 	<a id="twitter-share-button" href="http://twitter.com/share" class="twitter-share-button" data-url="shalliwork.com" data-text="" data-count="none" data-via="ShallIWork" data-related="shalliwork.com">Tweet</a>
-	<script>
-		document.getElementById('twitter-share-button').setAttribute('data-text', '<%= t "shall_i_work_now" %> - ' + message + ', ' + subtitle + ', http://shalliwork.com, #work' )
-	</script>
+		<script>
+			document.getElementById('twitter-share-button').setAttribute('data-text', '<%= t "shall_i_work_now" %> - ' + message + ', ' + subtitle + ', http://shalliwork.com, #work' )
+		</script>
 	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-	</p>
-	<br/>
+	</div>
+	
 	<table cellpadding="0" cellspacing="0" class="quote">
 		<tbody>
 			<tr valign="top">
 				<td width="33%" class="pict left" rowspan="2"><img src="images/q1.gif" alt="" width="32" height="31" hspace="10"></td>
-				<td width="34%" class="content">
+				<td width="34%" class="proverb">
 					<%= t "work_quote" %> 
 				</td>
 				<td width="33%" class="pict right" rowspan="2"><img src="images/q2.gif" alt="" width="32" height="31"></td>
