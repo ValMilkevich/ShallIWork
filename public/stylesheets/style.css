@@ -39,7 +39,16 @@ html,body{height:100%;text-align:center;}
 	margin-bottom: 32px;
 	vertical-align: top;
 }
-.content p span.subtitle{ margin-bottom: 0px; vertical-align: center;}
+.content div.subtitle {height: 21px;}
+.content div.subtitle div{ 
+	vertical-align: center;
+	border: none;
+	height: 21px;
+	overflow: hidden;
+	margin: 0px;
+	display:inline-block;
+	width: 120px;
+	}
 
 .footer,.paragraph{height:4em;}
 
@@ -53,6 +62,7 @@ html,body{height:100%;text-align:center;}
 	font-weight: 300;
 	height: 24px;
 	line-height: 24px;
+	margin-top: 72px;
 }
 .footer a{text-decoration: none;}
 
@@ -79,10 +89,10 @@ html,body{height:100%;text-align:center;}
 	font-size: 16px;
 }
 
-table.quote{ margin-top: 72px; }
+table.quote{ margin-top: 72px;}
 table.quote{ border: none; width: 100%; background: #F5F5EA; padding: 12px; margin-top: 24px;}
-table.quote td.proverb{ text-align: left;}
+table.quote td.proverb{ text-align: left; font-size: 16px;}
 table.quote td.pict{ padding: 0px 12px;}
 table.quote td.left{ text-align: right;}
 table.quote td.right{ text-align: left; vertical-align: bottom;}
-table.quote tr.author td{ padding: 12px;}
+table.quote tr.author td{ padding: 12px; color: #333; font-size: 14px;}
