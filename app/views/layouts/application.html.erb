@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Shall I Work?</title>
-	<meta name="author" content="@mval">
-	<link rel="shortcut icon" href="http://shalliwork.com/favicon.png" />
-  <%= stylesheet_link_tag :all %>
-	<%= javascript_include_tag "locale", "locales/#{I18n.locale}" %>
-  <%= javascript_include_tag "colors.js", "working.js" %>
-  <%= csrf_meta_tag %>
-	<script type="text/javascript">
+	<head>
+	  <title>Shall I Work?</title>
+		<meta name="author" content="@mval">
+		<link rel="shortcut icon" href="http://shalliwork.com/favicon.png" />
+	  <%= stylesheet_link_tag :all %>
+		<%= javascript_include_tag "locale", "locales/#{I18n.locale}" %>
+	  <%= javascript_include_tag "colors.js", "working.js" %>
+	  <%= csrf_meta_tag %>
+		<script type="text/javascript">
 
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-23498770-1']);
-	  _gaq.push(['_trackPageview']);
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-23498770-1']);
+		  _gaq.push(['_trackPageview']);
 
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-	</script>
-</head>
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+		<meta property="og:title" content="Shall I work now?"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://shalliwork.com"/>
+    <meta property="og:image" content="http://shalliwork.com/favicon.png"/>
+    <meta property="og:site_name" content="Shall I work"/>
+    <meta property="og:description" content="<%= t "og_description" %>"/>
+	</head>
 	<body>
 		<%= yield %>
 	</body>
